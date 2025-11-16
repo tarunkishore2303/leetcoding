@@ -1,0 +1,25 @@
+/*
+ * @lc app=leetcode id=1004 lang=java
+ *
+ * [1004] Max Consecutive Ones III
+ */
+
+// @lc code=start
+class Solution {
+    public int longestOnes(int[] nums, int k) {
+        int ans = 0;
+        int l =0,r=0,zeros=0;
+        while(r<nums.length){
+            if(nums[r]==0) zeros++;
+            while(zeros>k){
+                if(nums[l]==0) zeros--;
+                l++;
+            }
+            if(zeros<=k) ans = Math.max(ans,r-l+1);
+            r++;
+        }
+        return ans;
+    }
+}
+// @lc code=end
+

@@ -1,0 +1,32 @@
+/*
+ * @lc app=leetcode id=3254 lang=java
+ *
+ * [3254] Find the Power of K-Size Subarrays I
+ */
+
+// @lc code=start
+import java.util.*;
+
+class Solution {
+    public int[] resultsArray(int[] nums, int k) {
+        if (k == 1)
+            return nums;
+        int n = nums.length;
+        int[] res = new int[n - k + 1];
+        Arrays.fill(res, -1);
+        int count = 1;
+        for (int i = 0; i < n - 1; i++) {
+            if (nums[i] + 1 == nums[i + 1])
+                count++;
+            else
+                count = 1;
+
+            if (count >= k) {
+                res[i - k + 2] = nums[i + 1];
+            }
+
+        }
+        return res;
+    }
+}
+// @lc code=end
