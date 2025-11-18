@@ -378,6 +378,9 @@ public class DPTemplate {
   * [Coin Change](https://leetcode.com/problems/coin-change/)
   * [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
 
+### Tip:
+- If you are looking for something in an array or a number, try  like dp[i-quantity]. For example refer coin change problem.
+
 -----
 
 ### 9\. Topological Sort (Kahn's Algorithm - BFS)
