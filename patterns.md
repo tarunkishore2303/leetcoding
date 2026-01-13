@@ -45,6 +45,9 @@ public class SlidingWindowTemplate {
   * [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
   * [Permutation in String](https://leetcode.com/problems/permutation-in-string/)
 
+### Sliding window with montonic queue:
+- When the problem asks for rapidly changing min/max values in a particular window then you might have to use montonic queue.
+
 -----
 
 ### 2\. Two Pointers (Opposite Ends)
