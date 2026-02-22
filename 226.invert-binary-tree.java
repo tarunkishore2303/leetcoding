@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode id=226 lang=java
+p * @lc app=leetcode id=226 lang=java
  *
- * [226] Invert Binary Tree
+ * [226] Invert 
  */
 
 // @lc code=start
